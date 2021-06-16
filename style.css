@@ -3,8 +3,8 @@
   --color-dark-blue: hsl(244, 38%, 16%);
   --color-violet: hsl(276, 42%, 47%);
   --color-white: hsl(0, 0%, 100%);
-  --color-white-trans-md: hsla(0, 0%, 100%, 0.75);
-  --color-white-trans-sm: hsla(0, 0%, 100%, 0.6);
+  --color-white-trans-m: hsla(0, 0%, 100%, 0.75);
+  --color-white-trans-s: hsla(0, 0%, 100%, 0.6);
   --color-violet-overlay:hsla(277, 64%, 61%, 0.5);
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Lexend Deca", sans-serif;
@@ -37,7 +37,7 @@ body {
 .card{ 
   margin-top: 15%;
   margin-bottom: 15%;
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column-reverse;
   /* border: 4px solid red;  */
@@ -48,10 +48,10 @@ body {
 
 }
 .card-text-container { 
-  padding: 5rem;
+  padding: 4rem;
 }
 .card-text-container h2{
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   font-family: var(--font-primary);
 }
@@ -60,9 +60,10 @@ body {
 }
 
 .card-text-container p{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   font-family: var(--font-secondary);
+  color: var(--color-white-trans-m);
   margin-bottom: 2rem;
 }
 
@@ -70,8 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  /* margin: 1rem; */
-  border: 4px solid green;
+  /* border: 4px solid green; */
 }
 
 .icon h4 {
@@ -80,17 +80,17 @@ body {
   font-size: 2rem;
   font-weight: 700;
   font-family: var(--font-primary);
+  color:var(--color-white);
  /* border: 4px solid green;  */
 }
 .small {
   font-size: 1.2rem;
   text-transform:uppercase;
   font-weight: 400;
+  color: var(--color-white-trans-s);
 }
 /* .card-image-container{
-
   box-shadow: inset 0 0 0 rgba(62, 82, 163, 0.5);
-
 } */
 .card-img::after {
   content: "";
@@ -125,7 +125,7 @@ body {
 
   .card-text-container {
     flex: 1 0 50%;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
   }
   .card-text-container h2 {
     font-size: 3rem;
@@ -134,13 +134,11 @@ body {
 
   .card-text-container h4 {
     font-size: 2rem;
-    color: var(--color-white-trans-md);
     text-align: left;
   }
-  .card-text-container p,.small {
+  .card-text-container p {
     font-size: 1.3rem;
     font-family: var(--font-secondary);
-    color: var(--color-white-trans-sm);
     line-height: 1.5;
     text-align: left;
     font-weight: 400;
